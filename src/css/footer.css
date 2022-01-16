@@ -1,6 +1,6 @@
 footer{
     --padding-children :10px 20px;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     width: 100%;
     background-color: var(--dark-brown);
@@ -8,7 +8,7 @@ footer{
     color: var(--white-text)
 }
 .footer-warpper{
-    padding: 20px;   
+    /* padding: 20px;    */
 }
 .footer_top{
     /* padding:  var(--padding-children); */

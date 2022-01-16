@@ -14,6 +14,7 @@
     padding: 0px ;
     box-sizing: border-box;
     direction: var(--lang);
+    transition: 0.3s linear;
 }
 a{
     text-decoration: none;
@@ -57,5 +58,13 @@ button{
 }
 .justify_content_between{
     justify-content: space-between;
-    flex: 1;
+}
+.justify_content_center{
+    justify-content: center;
+}
+.align_center{
+    align-items: center;
+}
+.align_between {
+    align-content:space-between ;
 }

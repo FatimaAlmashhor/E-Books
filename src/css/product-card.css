@@ -1,0 +1,37 @@
+.products_row{
+    width:100%;
+    height: fit-content;
+    padding:4px;
+    margin : 4rem 0px;
+    /* background-color: var(--main-gray); */
+}
+.products_row_title{
+    width: inherit;
+}
+.products_list{
+    width: 100%;
+    column-gap: 2%;
+    row-gap: 15px;
+    
+}
+.product{
+    /* flex: 1; */
+    background-color: var(--main-gray);
+    padding : 6px 8px;
+    margin : auto 1px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+.product_warpper{
+    height: inherit;
+}
+.product_img{
+    flex: 3;
+}
+.product_name{
+    flex: 1;
+    margin:10px 2px;
+    padding : 9px ;
+    background-color: khaki;
+}
