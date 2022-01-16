@@ -40,3 +40,22 @@ button{
     border-radius: inherit;
     padding : 0px 8px;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.justify_content_around{
+    justify-content: space-around;
+}
+.justify_content_between{
+    justify-content: space-between;
+    flex: 1;
+}
