@@ -1,0 +1,16 @@
+footer{
+    --padding-children :10px 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--dark-brown);
+    height: fit-content;
+    color: var(--white-text)
+}
+.footer_top{
+    /* padding:  var(--padding-children); */
+}
+.footer_bottom{
+    background-color: var(--light-yellow-gray);
+    /* padding:  var(--padding-children); */
+}

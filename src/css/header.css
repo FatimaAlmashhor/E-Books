@@ -1,0 +1,40 @@
+header{
+    margin:20px 0px;
+    height: fit-content;
+    /* background-color: lightblue; */
+}
+
+.header-warrper{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    padding: 5px;
+}
+.search{
+    height: 40px;
+    width: 100%;
+    margin: auto 5vw 0px 25px;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.search input:focus{
+    border: none;
+    background-color: transparent;
+}
+
+
+.cart{
+    background-color: var(--dark-gray);
+    height: 40px;
+    width: 40px;
+    padding:7px;
+    border-radius: 50%;
+}
