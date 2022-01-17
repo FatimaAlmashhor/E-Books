@@ -62,6 +62,9 @@ button{
 .justify_content_center{
     justify-content: center;
 }
+.justify_content_start{
+    justify-content: flex-start;
+}
 .align_center{
     align-items: center;
 }
