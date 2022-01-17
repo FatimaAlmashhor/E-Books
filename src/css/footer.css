@@ -12,6 +12,7 @@ footer{
 }
 .footer_top{
     /* padding:  var(--padding-children); */
+    padding-top: 10px;
 }
 .footer_bottom{
     background-color: var(--light-yellow-gray);
@@ -26,20 +27,44 @@ footer{
 .footer_col{
     flex: 1;
     width: inherit;
-    margin: 5px 10px;
-    padding : 8px;
+    margin: 5px 7px
 }
 
 .footer_col_title{
     font-size: 18px;
     color: var( --gray-text);
-    margin:6px auto;
+    margin:5px auto;
     border-bottom: 1px solid rgb(72, 72, 72);
 }
 .footer_col_content ul li{
-    margin : 8px auto;
+    margin : 2px auto;
+    padding: 4px 9px; 
+    min-width: 100px;
     color: var(--white-text);
 }
 .payment_carts li{
-    margin: auto 5px;
+    margin: auto 2px;
+}
+.join-us-from{
+    background-color: var(--light-brown);
+    min-width:200px;
+    height: fit-content;
+    border-radius: 5px;
+}
+.join-us-from{
+    background-color: var(--light-brown);
+}
+@media (max-width :1000px) {
+    .footer_col{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer_col_content ul li{
+        display: none;
+        
+    }
+    .footer_col_title{
+        flex: 1;
+    }
+
 }
