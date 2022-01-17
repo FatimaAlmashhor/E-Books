@@ -8,6 +8,7 @@
     --light-yellow-gray:#e6e6e6;
     --lang: rtl;
     --tables: 1016px ;
+    --desktop:  1200px;
 }
 
 *{
@@ -26,7 +27,9 @@ ul{
     
 }
 .container{
-    padding :0px clamp( 0px,  6%, 9% );
+    /* padding :0px clamp( 0px,  6%, 9% ); */
+    max-width: 1200px;
+    margin: 0px auto;
 }
 input{
     width: 100%;
