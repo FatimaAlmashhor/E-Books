@@ -39,6 +39,7 @@ header{
     position: absolute;
     left :5px;
     top: 10px;
+    cursor: pointer;
 }
 .search input:focus{
     border: none;
@@ -56,6 +57,7 @@ header{
     width: 40px;
     min-width: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 /* .cart img{
     width: 90%;
