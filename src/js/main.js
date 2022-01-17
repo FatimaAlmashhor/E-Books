@@ -1,4 +1,5 @@
 (() => {
+    console.log('hi');
     const includes = document.getElementsByTagName('include');
     [].forEach.call(includes, i => {
         let filePath = i.getAttribute('src');
