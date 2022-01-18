@@ -1,6 +1,7 @@
 {
-  "name": "package",
+  "name": "e-books",
   "version": "0.0.0",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
