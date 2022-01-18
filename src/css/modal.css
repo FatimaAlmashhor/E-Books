@@ -1,0 +1,25 @@
+#modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px; 
+    left: 0px ;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal_warpper{
+    min-width:400px ;
+    min-height:fit-content ;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: var(--flat-shadow);
+    padding: 1.4rem 0px;
+}
+.modal_header{
+    padding : 0px 1.3rem
+}
+.close{
+    width: 15px;
+    cursor: pointer;
+
+}

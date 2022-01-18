@@ -17,8 +17,9 @@ footer{
 }
 .footer_bottom{
     background-color: var(--light-yellow-gray);
-    padding-top: 20px ;
-    padding-bottom: 20px ;
+    /* padding-top: 20px ;
+    padding-bottom: 20px ; */
+    padding : 2.1rem;
     color: var(--dark-brown);
 }
 .footer_bottom_container{

@@ -1,0 +1,1 @@
+const getId = (element) => document.getElementById(element);
