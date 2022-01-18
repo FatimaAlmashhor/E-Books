@@ -65,9 +65,21 @@
 /* here the last saction of the additial information */
 .book_additional_info{
     min-width: 400px;
-    min-height: 400px;
+    height: fit-content;
     margin: 1.1rem;
+    padding: 1.1rem;
     box-shadow: var(--flat-shadow);
+}
+.note{
+    background-color: rgb(253, 246, 204);
+    border-right: 5px solid rgb(255, 174, 0);
+    padding:10px;
+    margin-bottom: 9px;
+}
+.dropdown{
+    box-shadow: var(--flat-shadow);
+    margin: 0px 8px;
+    padding: 4px;
 }
 .row{
     margin:1.1rem auto;
