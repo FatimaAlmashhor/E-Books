@@ -1,13 +1,20 @@
-(() => {
+
+(async () => {
     console.log('hi');
     const includes = document.getElementsByTagName('include');
-    [].forEach.call(includes, i => {
+    await [].forEach.call(includes, i => {
         let filePath = i.getAttribute('src');
-        fetch(filePath).then(file => {
-            file.text().then(content => {
-                i.insertAdjacentHTML('afterend', content);
-                i.remove();
+        (async () => {
+            await fetch(filePath).then(file => {
+                file.text().then(content => {
+                    i.insertAdjacentHTML('afterend', content);
+                    i.remove();
+                });
             });
-        });
+        })()
     });
+    const getId = (element) => document.querySelector(element);
+    const modal = getId('#modal')
+    console.log(modal);
 })();
+

@@ -23,3 +23,12 @@
     cursor: pointer;
 
 }
+.modal_content{
+    /* overflow-y: scroll; */
+}
+.show_modal{
+    display: flex;
+}
+.hidden_modal{
+    display: none;
+}

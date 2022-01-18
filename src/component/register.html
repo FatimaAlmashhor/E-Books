@@ -1,4 +1,4 @@
-<div id="modal" class="flex-center">
+<div id="modal" class="flex-center hidden_modal">
     <div class="modal_warpper">
         <div class="modal_header">
             <p class="close" id='close-modal'>
@@ -12,20 +12,39 @@
                         <h3> أنشاء حساب</h3>
                     </div>
                     <form class="form_content form">
+                        <div class="flex-row">
+                            <label class="input rounded-5">
+                                <input type="phone" placeholder="  رقم الجوال">
+                            </label>
+                            <label class="input rounded-5">
+                                <input type="number" placeholder="  رمز البلد ">
+                            </label>
+                        </div>
+                        <button class="btn form-btn bg-gray rounded-5 color-gray"> أرسال رمز التحقق</button>
                         <label class="input rounded-5">
-                            <input type="phone" placeholder="  رقم الجوال">
+                            <input type="text" placeholder=" اسم الاول">
                         </label>
                         <label class="input rounded-5">
-                            <div class="flex-row ">
-                                <input type="text" placeholder="كلمه المرور">
-                                <span class="forgot color-blue">نسيت</span>
-                            </div>
+                            <input type="text" placeholder=" اسم العائله">
                         </label>
-                        <button class="btn form-btn bg-red rounded-5">تسجيل الدخول</button>
+                        <label class="input rounded-5">
+                            <input type="email" placeholder="  البريد الاكتروني">
+                        </label>
+                        <label class="input rounded-5">
+                            <input type="password" placeholder=" كلمه المرور ">
+                        </label>
+                        <label class="checkbox rounded-5 ">
+                            <input type="checkbox">
+                            <span class="color-gray">أوافق على <a href="#"  class="color-blue">الشروط والاوحكام</a> </span>
+                        </label>
+                        <label class="checkbox rounded-5 ">
+                            <input type="checkbox">
+                            <span class="color-gray"> لانضمام للنشره البريديه</span>
+                        </label>
+                        <button class="btn form-btn bg-gray color-gray rounded-5">انشاء حساب </button>
                     </form>
                     <div class="regiter_links flex-col">
-                        <p class="color-gray"> ليس لديك حساب ؟</p>
-                        <button class="btn bg-white rounded-5 color-gray mt-1">أنشاء حساب جديد</button>
+                        <p class="color-gray"> ليس لديك حساب ؟ <a  class="color-blue" href="#">تسجيل الدخول</a></p>
                     </div>
                 </div>
             </div>
