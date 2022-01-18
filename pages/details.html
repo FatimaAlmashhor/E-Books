@@ -13,19 +13,28 @@
   </head>
   <body>
     <include src="../src/component/nav.html">Loading...</include>
-    <main >
-      <section class="section">
-        <include src="../src/component/header.html">Loading...</include>
-      </section>
+    <section class="section">
+      <include src="../src/component/header.html">Loading...</include>
+    </section>
+    <main class="container">
       <section class="details_path">
          <div class="">path</div>
       </section>
       <section class=" details_detail flex-row">
         <!-- here the image saction -->
         <div class="book_image">
-          <div class="book_warpper">
-            <div class="book_big_image"></div>
-            <div class="books_details_list"></div>
+          <div class="book_warpper flex-col">
+            <div class="book_big_image rounded-5">
+              <img src="../assets/images/book.jpg" alt="">
+            </div>
+            <div class="books_details_list">
+              <div class="book_gallary">
+                <img src="../assets/images/book.jpg" alt="">
+              </div>
+              <div class="book_gallary">
+                <img src="../assets/images/img.png" alt="">
+              </div>
+            </div>
           </div>
         </div>
         <!-- here the information of the book -->
