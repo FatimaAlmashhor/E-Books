@@ -1,0 +1,57 @@
+.section{
+    width: 100%;
+    margin :1.2rem auto 0px auto ;
+}
+
+.slider_col{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    /* flex-direction: row; */
+    
+    padding :2rem 0px 3rem; 
+}
+.slider_col::after{
+    position: absolute;
+    left: -25px;
+    top:50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    content: url('../../assets/svgs/left-arrow.svg');
+}
+.slider_col::before{
+    position: absolute;
+    right: -25px;
+    top:50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    content: url('../../assets/svgs/right-arrow.svg');
+}
+.slider_col_warrper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.cates_list , .slider_list {
+    position: relative;
+    width: 200%;
+    display: flex;
+}
+
+.cat{
+    width : 130px ;
+    min-width : 110px ;
+    height: 110px;
+    background-color: white;
+    margin: 4px 1.2rem;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cat:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 30px -20px, rgba(0, 0, 0, 0.3) 0px 20px 60px -30px
+}
+
+/* here the advires section */
