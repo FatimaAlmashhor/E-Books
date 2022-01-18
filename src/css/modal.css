@@ -32,3 +32,18 @@
 .hidden_modal{
     display: none;
 }
+.show_login{
+    display: flex ;
+}
+.show_register{
+    display: flex ;
+}
+.show_image{
+    display: flex ;
+}
+.hidden_login{
+    display: none;
+}
+.hidden_register{
+    display: none;
+}

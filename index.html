@@ -13,7 +13,7 @@
     <nav>
       <ul class="nav-list container">
         <li>
-          <a href='flex-col '>
+          <a href='flex-col ' class="login-btn">
             <i class="nav_icon"><img src="./assets/svgs/svgexport-5.svg"/></i>
             <span>أدخل لحسابك اوسجل الان </span>
           </a>
@@ -523,7 +523,41 @@
         </div>
       </div>
     </footer>
-  </body>
+  <div id="modal" class="flex-center">
+      <div class="modal_warpper">
+          <div class="modal_header">
+              <p class="close" id='close-modal'>
+                  <img src='../../assets/svgs/close.svg' alt="close" />
+              </p>
+          </div>
+          <div class="modal_content">
+              <div class="login_section flex-col ">
+                  <div class="login_warpper">
+                      <div class="form_header">
+                          <h3>تسجيل الدخول</h3>
+                      </div>
+                      <form class="form_content form">
+                          <label class="input rounded-5">
+                              <input type="text" placeholder="الايميل او رقم الجوال">
+                          </label>
+                          <label class="input rounded-5">
+                              <div class="flex-row ">
+                                  <input type="text" placeholder="كلمه المرور">
+                                  <span class="forgot color-blue">نسيت</span>
+                              </div>
+                          </label>
+                          <button class="btn form-btn bg-red rounded-5">تسجيل الدخول</button>
+                      </form>
+                      <div class="regiter_links flex-col">
+                          <p class="color-gray"> ليس لديك حساب ؟</p>
+                          <button class="btn bg-white rounded-5 color-gray mt-1">أنشاء حساب جديد</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> 
   <script  src="./src/js/main.js"></script>
   <script  src="./src/js/modal.js"></script>
+  </body>
 </html>

@@ -1,1 +1,3 @@
-const getId = document.getElementById('modal');
+const getId = document.getElementsByClassName('modal');
+
+console.log(getId);
