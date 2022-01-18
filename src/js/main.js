@@ -13,8 +13,6 @@
             });
         })()
     });
-    const getId = (element) => document.querySelector(element);
-    const modal = getId('#modal')
-    console.log(modal);
+
 })();
 
