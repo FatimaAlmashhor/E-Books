@@ -1,4 +1,5 @@
 footer{
+    overflow: hidden;
     --padding-children :10px 20px;
     position: relative;
     bottom: 0px;
@@ -99,11 +100,11 @@ footer{
 @media (max-width :1000px) {
     .footer_col{
         min-width: 100%;
+        
         flex-direction: column;
     }
     .footer_col_content ul li{
         display: none;
-        
     }
     .footer_col_title{
         flex: 1;
