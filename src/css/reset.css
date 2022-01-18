@@ -142,6 +142,9 @@ img{
 .color-blue{
     color :blue
 }
+.color-red{
+    color :rgb(255, 0, 0)
+}
 .bg-red{
     background-color: rgb(206, 27, 27);
 }
@@ -150,4 +153,14 @@ img{
 }
 .mt-1{
  margin-top: 1.1rem;
+}
+.font-14{
+    font-size: 14px;
+}
+.w-15{
+    width:15px;
+    height:15px;
+}
+.w-full{
+    width:100%;
 }
