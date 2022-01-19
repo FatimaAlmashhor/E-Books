@@ -16,3 +16,18 @@
 
 })();
 
+
+async function checkElement(selector) {
+    const querySelector = null;
+    while (querySelector === null) {
+        await rafAsync();
+        querySelector = document.querySelector(selector);
+    }
+    return querySelector;
+}
+
+checkElement('body') //use whichever selector you want
+    .then((element) => {
+        console.info(element);
+        //Do whatever you want now the element is there
+    });

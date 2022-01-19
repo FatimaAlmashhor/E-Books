@@ -157,9 +157,13 @@ img{
 .color-white{
     color :rgb(255, 255, 255)
 }
+.color-green{
+    color: rgb(11, 134, 32);
+}
 .bg-red{
     background-color: rgb(206, 27, 27);
 }
+
 .bg-gray{
     background-color: var(--dark-gray);
 }
@@ -191,6 +195,19 @@ img{
 }
 .ml-1{
     margin-left: 4px;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.border-b-1 
+{
+    /* border-width: 1px; */
+    border-bottom-width: 1px;
+    padding-bottom: 6px;
+    border-bottom-style: solid;
+}
+.border-gray{
+    border-color: rgb(223, 223, 223);
 }
 @media screen and (max-width : 600px) {
     .grid-col-4{
