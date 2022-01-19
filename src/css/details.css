@@ -63,13 +63,7 @@
     width: 100%;
 }
 /* here the last saction of the additial information */
-.book_additional_info , .box {
-    min-width: 400px;
-    height: fit-content;
-    margin: 1.1rem;
-    padding: 1.1rem;
-    box-shadow: var(--flat-shadow);
-}
+
 
 .dropdown{
     box-shadow: var(--flat-shadow);
