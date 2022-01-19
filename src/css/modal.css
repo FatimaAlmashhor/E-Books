@@ -29,24 +29,28 @@
 .hidden{
     display: none;
 }
-.show_modal{
+#image-gallery{
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-.hidden_modal{
-    display: none;
+.arraws{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50%;
 }
-.show_login{
-    display: flex ;
+.arraws #left , .arraws #right{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    cursor: pointer;
+    width: 40px;
 }
-.show_register{
-    display: flex ;
-}
-.show_image{
-    display: flex ;
-}
-.hidden_login{
-    display: none;
-}
-.hidden_register{
-    display: none;
+.arraws #right{
+    right : 0px;
 }
