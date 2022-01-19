@@ -37,6 +37,14 @@
     box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--active-color);  
     background-color: var( --active-color);
     color: white;
+    animation-name: spreed;
+    animation-duration: .8s;
+    animation-iteration-count: 3;
+}
+@keyframes spreed{
+    to{
+        box-shadow: 0 0 0 7px #fff, 0 0 0 6px var(--active-color); 
+    }
 }
 .step::before{
     content: '';
