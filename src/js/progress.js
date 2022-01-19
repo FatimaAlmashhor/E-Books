@@ -10,7 +10,7 @@ const progressNumbers = steps.length;
 
 
 next.addEventListener('click', (e => {
-    if (progress > progressNumbers - 1) {
+    if (progress >= progressNumbers - 1) {
         console.log('stop');
     }
     else {
