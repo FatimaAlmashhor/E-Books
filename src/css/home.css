@@ -34,7 +34,7 @@
 
 .cates_list , .slider_list {
     position: relative;
-    width: 200%;
+    width: 120%;
     display: flex;
 }
 
@@ -55,3 +55,7 @@
 }
 
 /* here the advires section */
+.section_advir_bottom{
+    height:200px ;
+    margin-top: 5px;
+}
