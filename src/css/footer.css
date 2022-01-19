@@ -78,8 +78,8 @@ footer{
     margin: 8px 0px 0px auto;
 }
 .socail_item{
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     margin:auto 4px;
 }
 .socail_item img{
