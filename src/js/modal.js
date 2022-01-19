@@ -8,10 +8,12 @@ const image_gallary = get_one('#image-gallery');
 
 // close the modal
 get_one('#close_modal').addEventListener('click', () => {
+    modal.classList.add('hidden');
     login.classList.add('hidden');
     register.classList.add('hidden');
     image_gallary.classList.add('hidden');
-    modal.classList.add('hidden');
+    // remove the last children
+    image_gallary.removeChild(image_gallary.lastChild);
 })
 
 //for show the sign up
@@ -55,7 +57,6 @@ images.forEach((element, index) => {
         image_gallary.classList.remove('hidden')
         modal.classList.remove('hidden')
         create_image(e.target)
-
     })
 });
 
@@ -64,11 +65,21 @@ images.forEach((element, index) => {
     try {
         get_one('#left')
             .addEventListener('click', () => {
-                if (current_image !== 0) {
-                    // image_gallary
-                    console.log(images[current_image]);
-                    create_image(images[current_image])
+                if (current_image <= 0) {
+                    current_image = images.length;
                 }
+                current_image--;
+                console.log(current_image);
+                image_gallary.children[1].setAttribute('src', images[current_image].getAttribute('src'))
+            })
+        get_one('#right')
+            .addEventListener('click', () => {
+                if (current_image >= images.length) {
+                    current_image = 0;
+                }
+                image_gallary.children[1].setAttribute('src', images[current_image].getAttribute('src'))
+                console.log(current_image);
+                current_image++;
             })
     } catch (error) {
 
