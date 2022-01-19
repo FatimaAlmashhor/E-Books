@@ -78,8 +78,8 @@ footer{
     margin: 8px 0px 0px auto;
 }
 .socail_item{
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
     margin:auto 4px;
 }
 .socail_item img{
@@ -91,7 +91,7 @@ footer{
 }
 .payment_carts li{
     min-width: 40px ;
-    height: 40px;
+    height: 50px;
     margin:auto 7px;
 }
 .payment_carts img{
