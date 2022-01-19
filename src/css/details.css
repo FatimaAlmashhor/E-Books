@@ -70,12 +70,7 @@
     padding: 1.1rem;
     box-shadow: var(--flat-shadow);
 }
-.note{
-    background-color: rgb(253, 246, 204);
-    border-right: 5px solid rgb(255, 174, 0);
-    padding:10px;
-    margin-bottom: 9px;
-}
+
 .dropdown{
     box-shadow: var(--flat-shadow);
     margin: 0px 8px;
