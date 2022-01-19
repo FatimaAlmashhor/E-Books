@@ -4,14 +4,16 @@ const get_one = (element) => document.querySelector(element);
 const modal = get_one('#modal');
 const login = get_one('#login');
 const register = get_one('#register');
+const arraws = get_one('.arraws');
 const image_gallary = get_one('#image-gallery');
 
 // close the modal
 get_one('#close_modal').addEventListener('click', () => {
     modal.classList.add('hidden');
+    image_gallary.classList.add('hidden');
     login.classList.add('hidden');
     register.classList.add('hidden');
-    image_gallary.classList.add('hidden');
+    arraws.classList.add('hidden');
     // remove the last children
     image_gallary.removeChild(image_gallary.lastChild);
 })
@@ -30,6 +32,7 @@ get_one('#login_in_existing_account')
     .addEventListener('click', () => {
         login.classList.remove('hidden');
         register.classList.add('hidden');
+        arraws.classList.add('hidden');
     })
 
 // for all the btn that need to one the login modal 
@@ -37,6 +40,7 @@ get_arr('.login-btn').forEach(element => {
     element.addEventListener('click', (e) => {
         modal.classList.remove('hidden');
         login.classList.remove('hidden');
+        arraws.classList.add('hidden');
         console.log(get_one('#modal').classList);
     })
 });
@@ -54,6 +58,7 @@ const create_image = (e) => {
 images.forEach((element, index) => {
     current_image = index;
     element.addEventListener('click', (e) => {
+        arraws.classList.remove('hidden');
         image_gallary.classList.remove('hidden')
         modal.classList.remove('hidden')
         create_image(e.target)
