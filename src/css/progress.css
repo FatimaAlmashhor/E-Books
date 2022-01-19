@@ -1,7 +1,7 @@
 .progress_section{
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
-    /* overflow-y: scroll; */
+    margin: 2.2rem auto;
 }
 .progress_warpper{
     width: 100%;
@@ -95,6 +95,9 @@
     border-radius: 50%;
     /* overflow: hidden; */
 }
+.confirm_info{
+    min-width: 50%;
+}
 /* .animation-circule::after{
     content: '';
     position: absolute;
@@ -126,5 +129,8 @@
 @media screen and (max-width : 650px) {
     .progress_content{
         width: 100%;
+    }
+    .confirm_info{
+        min-width: 50%;
     }
 }
