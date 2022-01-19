@@ -1,4 +1,4 @@
-.modal{
+#modal{
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -25,6 +25,9 @@
 }
 .modal_content{
     /* overflow-y: scroll; */
+}
+.hidden{
+    display: none;
 }
 .show_modal{
     display: flex;

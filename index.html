@@ -8,15 +8,14 @@
     <title>E-book</title>
     <!-- <base href="http://localhost/">  -->
   </head>
+  <script  src="./src/js/main.js"></script>
   <body>
 
     <nav>
       <ul class="nav-list container">
-        <li>
-          <a href='flex-col ' class="login-btn">
-            <i class="nav_icon"><img src="./assets/svgs/svgexport-5.svg"/></i>
-            <span>أدخل لحسابك اوسجل الان </span>
-          </a>
+        <li class=" flex-row flex-center login-btn">
+          <i class="nav_icon"><img src="../assets/svgs/svgexport-5.svg"/></i>
+          <span>أدخل لحسابك اوسجل الان </span>
         </li>
         <li>
           <a href=''>
@@ -523,15 +522,15 @@
         </div>
       </div>
     </footer>
-  <div id="modal" class="flex-center">
+  <div id="modal" class="flex-center hidden">
       <div class="modal_warpper">
           <div class="modal_header">
-              <p class="close" id='close-modal'>
+              <p onclick="closeModal()" class="close" id='close-modal'>
                   <img src='../../assets/svgs/close.svg' alt="close" />
               </p>
           </div>
           <div class="modal_content">
-              <div class="login_section flex-col ">
+              <div id='login' class="login_section flex-col hidden">
                   <div class="login_warpper">
                       <div class="form_header">
                           <h3>تسجيل الدخول</h3>
@@ -550,14 +549,56 @@
                       </form>
                       <div class="regiter_links flex-col">
                           <p class="color-gray"> ليس لديك حساب ؟</p>
-                          <button class="btn bg-white rounded-5 color-gray mt-1">أنشاء حساب جديد</button>
+                          <button id='create_account' class="btn bg-white rounded-5 color-gray mt-1">أنشاء حساب جديد</button>
                       </div>
                   </div>
               </div>
+              <div id="register"  class="login_section flex-col hidden">
+                <div class="login_warpper">
+                    <div class="form_header">
+                        <h3> أنشاء حساب</h3>
+                    </div>
+                    <form class="form_content form">
+                        <div class="flex-row">
+                            <label class="input rounded-5">
+                                <input type="phone" placeholder="  رقم الجوال">
+                            </label>
+                            <label class="input rounded-5">
+                                <input type="number" placeholder="  رمز البلد ">
+                            </label>
+                        </div>
+                        <button class="btn form-btn bg-gray rounded-5 color-gray"> أرسال رمز التحقق</button>
+                        <label class="input rounded-5">
+                            <input type="text" placeholder=" اسم الاول">
+                        </label>
+                        <label class="input rounded-5">
+                            <input type="text" placeholder=" اسم العائله">
+                        </label>
+                        <label class="input rounded-5">
+                            <input type="email" placeholder="  البريد الاكتروني">
+                        </label>
+                        <label class="input rounded-5">
+                            <input type="password" placeholder=" كلمه المرور ">
+                        </label>
+                        <label class="checkbox rounded-5 ">
+                            <input type="checkbox">
+                            <span class="color-gray">أوافق على <a href="#"  class="color-blue">الشروط والاوحكام</a> </span>
+                        </label>
+                        <label class="checkbox rounded-5 ">
+                            <input type="checkbox">
+                            <span class="color-gray"> لانضمام للنشره البريديه</span>
+                        </label>
+                        <button class="btn form-btn bg-gray color-gray rounded-5">انشاء حساب </button>
+                    </form>
+                    <div class="regiter_links flex-col">
+                        <p class="color-gray"> ليس لديك حساب ؟ <a id='login_in_existing_account' class="color-blue" href="#">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
   </div> 
-  <script  src="./src/js/main.js"></script>
+  
   <script  src="./src/js/modal.js"></script>
   </body>
 </html>
