@@ -190,6 +190,9 @@ img{
 .mx-auto{
     margin: 0px auto ;
 }
+.mx-1{
+    margin: 0px 1rem ;
+}
 .ml-1{
     margin-left: 4px;
 }
@@ -233,13 +236,18 @@ img{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
-.book_additional_info , .box {
+/* .book_additional_info , .box {
     min-width: 400px;
     height: fit-content;
     margin: 1.1rem;
     padding: 1.1rem;
     box-shadow: var(--flat-shadow);
+} */
+.hidden{
+    position: relative;
+    display: none;
 }
+
 @media screen and (max-width : 600px) {
     .grid-col-4{
         grid-template-columns: repeat(2, 1fr);
@@ -247,7 +255,7 @@ img{
         row-gap: 5px;
         column-gap: 5px;
     }
-    .box{
+    /* .box{
         width: 100%;
-    }
+    } */
 }
