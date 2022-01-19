@@ -16,6 +16,8 @@
 
 })();
 
+const get_one = (element) => document.querySelector(element);
+const get_arr = (element) => document.querySelectorAll(element);
 
 // async function checkElement(selector) {
 //     const querySelector = null;

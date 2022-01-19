@@ -4,11 +4,15 @@ header{
 }
 
 .header-warrper{
+    position: sticky;
+    top: 6px;
     height: inherit;
     width: 100%;
     display: flex;
     align-items: center;
     justify-items: center;
+    background-color: white;
+    z-index: 100 !important;
 }
 .logo{
     padding: 5px;

@@ -1,5 +1,5 @@
-const get_arr = (element) => document.querySelectorAll(element);
-const get_one = (element) => document.querySelector(element);
+// const get_arr = (element) => document.querySelectorAll(element);
+// const get_one = (element) => document.querySelector(element);
 
 const modal = get_one('#modal');
 const login = get_one('#login');
