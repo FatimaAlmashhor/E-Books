@@ -60,11 +60,18 @@ images.forEach((element, index) => {
 });
 
 //for show the the previs image
-get_one('#left')
-    .addEventListener('click', () => {
-        if (current_image !== 0) {
-            // image_gallary
-            console.log(images[current_image]);
-            create_image(images[current_image])
-        }
-    });
+(() => {
+    try {
+        get_one('#left')
+            .addEventListener('click', () => {
+                if (current_image !== 0) {
+                    // image_gallary
+                    console.log(images[current_image]);
+                    create_image(images[current_image])
+                }
+            })
+    } catch (error) {
+
+    }
+}
+)()
