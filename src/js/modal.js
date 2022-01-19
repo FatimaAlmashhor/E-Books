@@ -8,15 +8,19 @@ const arraws = get_one('.arraws');
 const image_gallary = get_one('#image-gallery');
 
 // close the modal
-get_one('#close_modal').addEventListener('click', () => {
-    modal.classList.add('hidden');
-    image_gallary.classList.add('hidden');
-    login.classList.add('hidden');
-    register.classList.add('hidden');
-    arraws.classList.add('hidden');
-    // remove the last children
-    image_gallary.removeChild(image_gallary.lastChild);
-})
+(() => get_one('#close_modal').addEventListener('click', () => {
+    try {
+        modal.classList.add('hidden');
+        image_gallary.classList.add('hidden');
+        login.classList.add('hidden');
+        register.classList.add('hidden');
+        arraws.classList.add('hidden');
+        // remove the last children
+        image_gallary.removeChild(image_gallary.lastChild);
+    } catch (error) {
+
+    }
+}))()
 
 //for show the sign up
 get_one('#create_account')
@@ -36,14 +40,13 @@ get_one('#login_in_existing_account')
     })
 
 // for all the btn that need to one the login modal 
-get_arr('.login-btn').forEach(element => {
-    element.addEventListener('click', (e) => {
-        modal.classList.remove('hidden');
-        login.classList.remove('hidden');
-        arraws.classList.add('hidden');
-        console.log(get_one('#modal').classList);
-    })
-});
+get_one('.login-btn').addEventListener('click', (e) => {
+    console.log('licking me');
+    modal.classList.remove('hidden');
+    login.classList.remove('hidden');
+    arraws.classList.add('hidden');
+    console.log(get_one('#modal').classList);
+})
 
 let current_image = null;
 const images = get_arr('.book_gallary img');

@@ -1,7 +1,7 @@
 count_down = document.querySelectorAll('.count-down');
 
 // Set the date we're counting down to
-var countDownDate = [new Date("Jan 20, 2022 15:37:25").getTime(), new Date("Jan 30, 2022 15:37:25").getTime()];
+var countDownDate = [new Date("Jan 20, 2022 15:37:25").getTime(), new Date("Jan 28, 2022 15:37:25").getTime(), new Date("Jan 30, 2022 15:37:25").getTime()];
 count_down.forEach((element, index) => {
     var x = setInterval(function () {
 
@@ -18,16 +18,13 @@ count_down.forEach((element, index) => {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        //     + minutes + "m " + seconds + "s ";
-        console.log(days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ");
+
         element.innerText = 'left : ' + days + "d " + hours + ": "
             + minutes + ": " + seconds + "";
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            console.log('expire');
+            element.innerText = 'expire'
             // document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
