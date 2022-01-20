@@ -49,12 +49,12 @@ nav{
 .humbrger{
     display: none;
 }
-@media screen and (max-width : 895px) {
+@media screen and (max-width : 995px) {
     .nav_icon{
         display: none;
     }
 }
-@media screen and (max-width : 695px) {
+@media screen and (max-width : 718px) {
     .nav-list{
         display: none;
         

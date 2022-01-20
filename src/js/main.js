@@ -16,6 +16,8 @@
 
 })();
 
+console.log('here');
+
 const get_one = (element) => document.querySelector(element);
 const get_arr = (element) => document.querySelectorAll(element);
 
