@@ -49,7 +49,7 @@ get_one('.login-btn').addEventListener('click', (e) => {
 })
 
 let current_image = null;
-const images = get_arr('.book_gallary img');
+const images = get_arr('.book img');
 
 const create_image = (e) => {
     let src = e.getAttribute('src')
@@ -64,6 +64,7 @@ images.forEach((element, index) => {
         arraws.classList.remove('hidden');
         image_gallary.classList.remove('hidden')
         modal.classList.remove('hidden')
+        e.target.classList.add('active')
         create_image(e.target)
     })
 });
