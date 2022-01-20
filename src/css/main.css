@@ -138,6 +138,9 @@ img{
 .bg-red{
     background-color: rgb(206, 27, 27);
 }
+.bg-blue{
+    background-color: rgb(33, 100, 177);
+}
 
 .bg-gray{
     background-color: var(--dark-gray);
@@ -185,14 +188,35 @@ img{
 .p-1{
     padding: 1.1rem;
 }
+.py-2{
+    padding-bottom: 2rem ;
+    padding-top : 2rem ;
+}
 .px-1{
-    padding: 0px 1.1rem;
+    padding-right:  0.5rem;
+    padding-left:  0.5rem;
+}
+.py-5px{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .mx-auto{
     margin: 0px auto ;
 }
 .mx-1{
-    margin: 0px 1rem ;
+    margin: 0px 0.5rem ;
+}
+.mx-2{
+    margin: 0px 2rem ;
+}
+.mx-3{
+    margin: 0px 3rem ;
+}
+.mx-4{
+    margin: 0px 4rem ;
+}
+.mx-6{
+    margin: 0px 6rem ;
 }
 .ml-1{
     margin-left: 4px;
@@ -219,6 +243,14 @@ img{
 {
     /* border-width: 1px; */
     border-bottom-width: 1px;
+    padding-bottom: 6px;
+    border-bottom-style: solid;
+}
+.border-y-1 
+{
+    /* border-width: 1px; */
+    border-bottom-width: 1px;
+    border-top-width: 1px;
     padding-bottom: 6px;
     border-bottom-style: solid;
 }

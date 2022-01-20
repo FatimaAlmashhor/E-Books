@@ -214,10 +214,12 @@
           <div class="cart_adding row flex-row">
             <div class="dropdown rounded-5 bg-gray flex-center">
               <span>1</span>
-              <span>icon</span>
+              <span class="w-15 mx-1">
+                <img class="" src="../assets/svgs/arrow-down.svg" />
+              </span>
             </div>
             <div class="btn flex-1 bg-red flex-row flex-center rounded-5 color-white">
-              <span class="w-15"><img src="../assets/svgs/cart.svg"/></span>
+              <span class="w-15 mx-1"><img src="../assets/svgs/white-card-without-circule.svg"/></span>
               <span class="font-bold">أضف الى السله</span>
             </div>
           </div>
@@ -275,37 +277,36 @@
           </div>
         </div>
         </div>
-        <div class="row">
-          <h6 class="bg-gray p-1 color-gray">
+        <div class="row p-1 bg-gray ">
+          <h6 class=" color-gray ">
             كتاب يتحدث على بعض أسماء الله الحسنى وكيف نعيشها في حياتنا حرص تامؤلف أن يكونالكتاب لمن هم متوسطي ويكون مناسب للمحتاج 
           </h6>
         </div>
-        <div class="row">
+        <!-- the requirment section -->
+        <div class="row mx-1 ">
           <h2>مواصفات</h2>
 
           <!-- tablr -->
-          <div class="m-1 row">
-            <div class="table-row  flex-row p-1 border-b-1 border-gray">
-              <p class="">رقم الصنف</p>
-              <p class="mx-1 font-bold" >3234324</p>
-            </div>
-            <div class="table-row  flex-row p-1 border-b-1 border-gray">
-              <p class="">رقم الصنف</p>
-              <p class="mx-1 font-bold" >3234324</p>
-            </div>
-            <div class="table-row  flex-row p-1 border-b-1 border-gray">
-              <p class="">رقم الصنف</p>
-              <p class="mx-1 font-bold" >3234324</p>
-            </div>
-            <div class="table-row  flex-row p-1 border-b-1 border-gray">
-              <p class="">رقم الصنف</p>
-              <p class="mx-1 font-bold" >3234324</p>
-            </div>
-            <div class="table-row  flex-row p-1 border-b-1 border-gray">
-              <p class="">رقم الصنف</p>
-              <p class="mx-1 font-bold" >3234324</p>
-            </div>
-            
+          <div class="m-1 row " id='required-table'>
+            <!-- fetch the requirement from the js -->
+          </div>
+        </div>
+
+        <!-- here the comment setion -->
+        <div class="row py-2">
+          <div class="flex-row">
+            <h1 class="mx-1">
+              مراجعه العملاء
+            </h1>
+            <button class="flex-row flex-center btn px-1  py-5px color-white rounded-5 bg-blue">
+              <span class="font-bold mx-1 font-24 flex-row justify_content_around">
+                +
+              </span>
+              اكتب مراجعتك
+            </button>
+          </div>
+          <div id="comments" class="row">
+           <!-- HERE fetch from the required js -->
           </div>
         </div>
       </section>
@@ -399,5 +400,6 @@
     <include src="../src/component/footer.html">Loading...</include>
     <script type="module" src="../src/js/main.js"></script>
     <script type="module" src="../src/js/modal.js"></script>
+    <script type="module" src="../src/js/required.js"></script>
   </body>
 </html>
