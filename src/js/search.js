@@ -1,52 +1,9 @@
 const get_one = (element) => document.querySelector(element);
 const get_all = (element) => document.querySelectorAll(element);
+// import {get_one , get_all} from './main' ;
 const product_list = get_one('#product_list')
 const cart_counter = get_one('#cart-counter')
-const damoData = [
-  {
-    id: 0,
-    name: 'لانك الله',
-    title: 'كتاب الكتروني',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-  {
-    id: 0,
-    title: 'كتاب الكتروني',
-    name: 'كلي ونامي ',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-  {
-    id: 0,
-    title: 'كتاب الكتروني',
-    name: ' نون النسوه',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-  {
-    id: 0,
-    title: 'كتاب الكتروني',
-    name: 'تخاريف  ',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-  {
-    id: 0,
-    title: 'كتاب الكتروني',
-    name: 'علم النفس  ',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-  {
-    id: 0,
-    title: 'كتاب الكتروني',
-    name: 'علم النفس  ',
-    price: "19.22",
-    img: "../assets/images/465531.jpg",
-  },
-
-]
+import { damoData } from '../../utils/damoData'
 
 let current_counter = 0;
 window.onload = () => {
@@ -94,7 +51,7 @@ const _fetchData = (arr) => {
           <img src="../assets/svgs/star.svg" />
         </span>
         <span class="cart_icon adding-cart w-20">
-          <img src="../assets/svgs/cart.svg" />
+          <img src="../assets/svgs/white-card.svg" />
         </span>
         <span class="w-20">
           <img src="../assets/svgs/two-arrow.svg" />

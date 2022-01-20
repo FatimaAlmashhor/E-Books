@@ -78,12 +78,13 @@
           <img src="../assets/images/img.png" alt="">
         </div>
         <div class="search">
-          <input type="text" placeholder="البحث" />
-          <button ><span>
+          <input  id='search_input' type="text" placeholder="البحث" />
+          <button id='search_btn' ><span>
             <img src="../assets/svgs/search.svg"/>
           </span></button>
         </div>
-        <a class="cart" href="../pages/cart.html">
+        <a class="cart flex-col flex-center" href="../pages/cart.html">
+          <span id='cart-counter'>0</span>
         </a>
       </div>
       <div class="slider">
@@ -294,6 +295,7 @@
 
         <!-- here the comment setion -->
         <div class="row py-2">
+          
           <div class="flex-row">
             <h1 class="mx-1">
               مراجعه العملاء
@@ -307,6 +309,21 @@
           </div>
           <div id="comments" class="row">
            <!-- HERE fetch from the required js -->
+          </div>
+        </div>
+
+        <!-- here the products section -->
+        <div class="row">
+          <div class="products_row_title flex-row justify_content_between">
+            <h2> منتجات مشابهه</h2>
+
+          </div>
+          <div class="products_row_content slider_col">
+            <div class="slider_col_warrper">
+              <ul id='product_list' class="products_list slider_list ">
+              
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -398,8 +415,8 @@
       </div>
   </div> 
     <include src="../src/component/footer.html">Loading...</include>
-    <script type="module" src="../src/js/main.js"></script>
     <script type="module" src="../src/js/modal.js"></script>
+    <script type="module" src="../src/js/search.js"></script>
     <script type="module" src="../src/js/required.js"></script>
   </body>
 </html>

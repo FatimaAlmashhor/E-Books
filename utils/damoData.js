@@ -45,3 +45,49 @@ export const comments = [
     evaluation: 'جميل جدا ومفيد'
   },
 ]
+
+export const damoData = [
+  {
+    id: 0,
+    name: 'لانك الله',
+    title: 'كتاب الكتروني',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+  {
+    id: 0,
+    title: 'كتاب الكتروني',
+    name: 'كلي ونامي ',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+  {
+    id: 0,
+    title: 'كتاب الكتروني',
+    name: ' نون النسوه',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+  {
+    id: 0,
+    title: 'كتاب الكتروني',
+    name: 'تخاريف  ',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+  {
+    id: 0,
+    title: 'كتاب الكتروني',
+    name: 'علم النفس  ',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+  {
+    id: 0,
+    title: 'كتاب الكتروني',
+    name: 'علم النفس  ',
+    price: "19.22",
+    img: "../assets/images/465531.jpg",
+  },
+
+]

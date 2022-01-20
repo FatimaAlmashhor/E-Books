@@ -18,10 +18,9 @@
 
 console.log('[outer function]');
 
-const get_one = (element) => document.querySelector(element);
-const get_arr = (element) => document.querySelectorAll(element);
+export const get_one = (element) => document.querySelector(element);
+export const get_all = (element) => document.querySelectorAll(element);
 
-export { get_one, get_arr }
 
 //  get_arr
 // async function checkElement(selector) {
