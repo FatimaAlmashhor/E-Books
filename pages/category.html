@@ -112,23 +112,85 @@
       </div>
     </header>
     <main >
-      <section class="section row flex-row justify_content_between">
-        <div class="filter_section">
-          <div class="box mx-auto">
-            Filter
+      <section class="cat_section row ">
+        <div class="filter_section row mx-1  p-1 ">
+          <div class=" mx-auto w-full">
+            <!-- the top part -->
+            <div class="flex-row py-1 border-1 border-green rounded-5 my-1 w-full">
+              <span class="w-20 mx-1">
+                <img src='../assets/svgs/arabic books.svg'/>
+              </span>
+              <h3 class="color-green font-bold ">كتاب ألكتروني</h3>
+            </div>
+
+            <!-- the filter part -->
+            <div class="collap">
+              <div class="collaps_header  bg-green ">
+                <p class="color-white">
+                  تصفيه النتائج
+                </p>
+              </div>
+              <div class="collaps_content">
+                <div class="collaps_item">
+                  <div class="collaps_item_header flex-row justify_content_between w-full">
+                    <p> علامه تجاريه </p>
+                    <span class="collaps_icon" data-type='squire'> - </span>
+                  </div>
+                  <div class="collaps_item_body">
+                   <div class="p-1">
+                    something
+                   </div>
+                  </div>
+                </div>
+                <div class="collaps_item">
+                  <div class="collaps_item_header flex-row justify_content_between w-full">
+                    <p> علامه تجاريه </p>
+                    <span class="collaps_icon" data-type='squire'> - </span>
+                  </div>
+                  <div class="collaps_item_body">
+                   <div class="p-1">
+                    something
+                   </div>
+                  </div>
+                </div>
+                <div class="collaps_item">
+                  <div class="collaps_item_header flex-row justify_content_between w-full">
+                    <p> علامه تجاريه </p>
+                    <span class="collaps_icon" data-type='squire'> - </span>
+                  </div>
+                  <div class="collaps_item_body">
+                   <div class="p-1">
+                    something
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="products_row_content flex-1">
-          <div class="slider_col_warrper">
-            <ul id='product_list' class=" flex-row flex-center ">
-            
-            </ul>
-          </div>
+          <!-- the orders section -->
+         <div class="w-full">
+            <div class="flex-row">
+              <p>الترتيب بحسب :</p>
+              <div>
+                <!-- drop down -->
+              </div>
+            </div>
+         </div>
+
+         <!-- products section -->
+         <div class="slider_col_warrper">
+          <ul id='product_list' class=" flex-row  ">
+          
+          </ul>
+        </div>
         </div>
       </section>
     </main>
     <include src="../src/component/footer.html">Loading...</include>
     <script type="module" src="../src/js/main.js"></script>
     <script type="module" src="../src/js/search.js"></script>
+    <script type="module" src="../src/js/collaps.js"></script>
   </body>
 </html>

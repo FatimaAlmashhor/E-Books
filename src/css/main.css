@@ -9,6 +9,7 @@
 @import url('./category.css');
 @import url('./cart.css');
 @import url('./progress.css');
+@import url('./collaps.css');
 @import url('./modal.css');
 a{
     text-decoration: none;
@@ -43,6 +44,12 @@ img{
 }
 .flex-1{
     flex:1;
+}
+.flex-2{
+    flex:2;
+}
+.flex-3{
+    flex:3;
 }
 .flex-row{
     display: flex;
@@ -145,6 +152,9 @@ img{
 .bg-gray{
     background-color: var(--dark-gray);
 }
+.bg-green{
+    background-color: green;
+}
 .font-bold{
     font-weight: bold;
 }
@@ -188,6 +198,10 @@ img{
 .p-1{
     padding: 1.1rem;
 }
+.py-1{
+    padding-bottom: 1rem ;
+    padding-top : 1rem ;
+}
 .py-2{
     padding-bottom: 2rem ;
     padding-top : 2rem ;
@@ -218,6 +232,10 @@ img{
 .mx-6{
     margin: 0px 6rem ;
 }
+.my-1{
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+}
 .ml-1{
     margin-left: 4px;
 }
@@ -238,6 +256,13 @@ img{
 }
 .mt-7{
     margin-top: 7rem;
+}
+.border-1{
+    border-width: 1px;
+    border-style: solid;
+}
+.border-green{
+    border-color: green;
 }
 .border-b-1 
 {
