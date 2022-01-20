@@ -12,14 +12,123 @@
     <title>E-books</title>
   </head>
   <body>
-    <include src="../src/component/nav.html">Loading...</include>
+        <!-- here the navigation -->
+        <nav>
+          <ul class="nav-list container">
+            <li class=" flex-row flex-center login-btn">
+                <i class="nav_icon"><img src="../assets/svgs/svgexport-5.svg"/></i>
+                <span>أدخل لحسابك اوسجل الان </span>
+            </li>
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/star.svg"/></i>
+                <span> الرئسية </span>
+              </a>
+            </li>
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/delivery.svg"/></i>
+                <span>من نحن </span>
+              </a>
+            </li>
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/security.svg"/></i>
+                <span>اتصل بنا  </span>
+              </a>
+            </li>
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/help.svg"/></i>
+                <span> المساعدة </span>
+              </a>
+            </li>
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/location.svg"/></i>
+                <span> سيايسه الخصوصيه  </span>
+              </a>
+            </li>
+            <li>
+              <a href=''>
+                <i class=""></i>
+                <span> اليمن  </span>
+              </a>
+            </li>
+            
+            <li>
+              <a href=''>
+                <i class="nav_icon"><img src="../assets/svgs/langs.svg"/></i>
+                <span> English  </span>
+              </a>
+            </li>
+            
+          </ul>
+          <div id='humburger' class="  humbrger">
+            <div class="w-20 ">
+              <img src="../assets/svgs/humbarger.svg" alt="">
+            </div>
+          </div>
+        </nav>
+        <!-- here the header -->
+        <header>
+          <div class="header-warrper container">
+            <div class="logo">
+              <img src="../assets/images/img.png" alt="">
+            </div>
+            <div class="search">
+              <input  id='search_input' type="text" placeholder="البحث" />
+              <button id='search_btn' ><span>
+                <img src="../assets/svgs/search.svg"/>
+              </span></button>
+            </div>
+            <a class="cart flex-col flex-center" href="../pages/cart.html">
+              <span id='cart-counter'>0</span>
+            </a>
+          </div>
+          <div class="slider">
+            <ul class="slider-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="slider_warrper">
+              <div class="slider_img">
+                <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000" />
+              </div>
+              <div class="slider_img" >
+                <img src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000" />
+              </div>
+              <div class="slider_img" >
+                <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000" />
+              </div>
+              <div class="slider_img" >
+                <img src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000" />
+              </div>
+              
+              <!-- <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> -->
+            </div>
+          </div>
+        </header>
     <main >
-      <section class="section">
-        
+      <section class="section row flex-row justify_content_between">
+        <div class="filter_section">
+          <div class="box mx-auto">
+            Filter
+          </div>
+        </div>
+        <div class="products_row_content flex-1">
+          <div class="slider_col_warrper">
+            <ul id='product_list' class=" flex-row flex-center ">
+            
+            </ul>
+          </div>
+        </div>
       </section>
-      cate Page
     </main>
     <include src="../src/component/footer.html">Loading...</include>
     <script type="module" src="../src/js/main.js"></script>
+    <script type="module" src="../src/js/search.js"></script>
   </body>
 </html>
