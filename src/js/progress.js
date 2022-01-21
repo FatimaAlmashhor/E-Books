@@ -1,9 +1,9 @@
-const get_all = (element) => document.querySelectorAll(element)
-const get_one = (element) => document.querySelector(element)
+const getAll = (element) => document.querySelectorAll(element)
+const getone = (element) => document.querySelector(element)
 
-const steps = get_all('.step')
-const next = get_one('#next')
-const back = get_one('#back')
+const steps = getAll('.step')
+const next = getone('#next')
+const back = getone('#back')
 
 let progress = 0;
 const progressNumbers = steps.length;
@@ -16,9 +16,9 @@ next.addEventListener('click', (e => {
     else {
         progress++;
         steps[progress].classList.add('active')
-        get_one(`[data-progress-content='${progress}']`).classList.remove('hidden')
+        getone(`[data-progress-content='${progress}']`).classList.remove('hidden')
         if (progress > 0) {
-            get_one(`[data-progress-content='${progress - 1}']`).classList.add('hidden')
+            getone(`[data-progress-content='${progress - 1}']`).classList.add('hidden')
         }
     }
 }))
@@ -29,10 +29,10 @@ back.addEventListener('click', (e => {
     else {
         steps[progress].classList.remove('active')
         progress--;
-        get_one(`[data-progress-content='${progress}']`).classList.remove('hidden')
+        getone(`[data-progress-content='${progress}']`).classList.remove('hidden')
         if (progress < progressNumbers) {
             console.log('[progress]', progress);
-            get_one(`[data-progress-content='${progress + 1}']`).classList.add('hidden')
+            getone(`[data-progress-content='${progress + 1}']`).classList.add('hidden')
         }
     }
 }))

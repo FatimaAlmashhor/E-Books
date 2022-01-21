@@ -13,14 +13,15 @@
 }
 .progress_steps{
     height: 100px;
-    width: inherit;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     direction: ltr;
-    margin-top: 7%;
-    margin-left: 20%;
+    margin-top: 1.2%;
+    margin-left: 18%;
 }
+
 .step{
     position: relative;
     width: 100%;
@@ -86,6 +87,7 @@
 
 .progress_content{
     width: 50%;
+    min-height: 350px;
 }
 .animation-circule{
     position: relative;
@@ -127,6 +129,9 @@
     } */
 }
 @media screen and (max-width : 650px) {
+    .progress_steps{
+        width: 100%;
+    }
     .progress_content{
         width: 100%;
     }

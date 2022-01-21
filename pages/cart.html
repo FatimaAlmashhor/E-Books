@@ -8,6 +8,64 @@
   <link rel="stylesheet" href="../src/css/main.css">
 </head>
 <body>
+  <!-- here the navigation -->
+  <nav>
+    <ul class="nav-list container">
+      <li class=" flex-row flex-center login-btn">
+          <i class="nav_icon"><img src="../assets/svgs/svgexport-5.svg"/></i>
+          <span>أدخل لحسابك اوسجل الان </span>
+      </li>
+      <li>
+        <a href='../index.html'>
+          <i class="nav_icon"><img src="../assets/svgs/star.svg"/></i>
+          <span> الرئسية </span>
+        </a>
+      </li>
+      <li>
+        <a href=''>
+          <i class="nav_icon"><img src="../assets/svgs/delivery.svg"/></i>
+          <span>من نحن </span>
+        </a>
+      </li>
+      <li>
+        <a href=''>
+          <i class="nav_icon"><img src="../assets/svgs/security.svg"/></i>
+          <span>اتصل بنا  </span>
+        </a>
+      </li>
+      <li>
+        <a href=''>
+          <i class="nav_icon"><img src="../assets/svgs/help.svg"/></i>
+          <span> المساعدة </span>
+        </a>
+      </li>
+      <li>
+        <a href=''>
+          <i class="nav_icon"><img src="../assets/svgs/location.svg"/></i>
+          <span> سيايسه الخصوصيه  </span>
+        </a>
+      </li>
+      <li>
+        <a href=''>
+          <i class=""></i>
+          <span> اليمن  </span>
+        </a>
+      </li>
+      
+      <li>
+        <a href=''>
+          <i class="nav_icon"><img src="../assets/svgs/langs.svg"/></i>
+          <span> English  </span>
+        </a>
+      </li>
+      
+    </ul>
+    <div id='humburger' class="  humbrger">
+      <div class="w-20 ">
+        <img src="../assets/svgs/humbarger.svg" alt="">
+      </div>
+    </div>
+  </nav>
   <section class="section  cart_section ">
     <div class="flex-col container">
       <h1 class="font-bold font-30">
@@ -194,7 +252,95 @@
       </div>
     </div>
   </section>
-  <!-- <include src="../src/component/footer.html">Loading...</include> -->
+  <div id="modal" class="flex-center hidden">
+    <div class="modal_warpper">
+        <div class="modal_header">
+            <p  class="close" id='close_modal'>
+                <img src='../assets/svgs/close.svg' alt="close" />
+            </p>
+        </div>
+        <div class="modal_content">
+            <div id='login' class="login_section flex-col hidden">
+                <div class="login_warpper">
+                    <div class="form_header">
+                        <h3>تسجيل الدخول</h3>
+                    </div>
+                    <form class="form_content form">
+                        <label class="input rounded-5">
+                            <input type="text" placeholder="الايميل او رقم الجوال">
+                        </label>
+                        <label class="input rounded-5">
+                            <div class="flex-row ">
+                                <input type="text" placeholder="كلمه المرور">
+                                <span class="forgot color-blue">نسيت</span>
+                            </div>
+                        </label>
+                        <button class="btn w-full form-btn bg-red color-white rounded-5">تسجيل الدخول</button>
+                    </form>
+                    <div class="regiter_links flex-col">
+                        <button  id='create_account' class="color-gray"> ليس لديك حساب ؟</button>
+                        <button  class="btn  bg-white rounded-5 color-gray mt-1">أنشاء حساب جديد</button>
+                    </div>
+                </div>
+            </div>
+            <div id="register"  class="login_section flex-col hidden">
+              <div class="login_warpper">
+                  <div class="form_header">
+                      <h3> أنشاء حساب</h3>
+                  </div>
+                  <form class="form_content form">
+                      <div class="flex-row justify_content_between">
+                          <div class="w-full  ml-1 flex-1">
+                            <label class="input rounded-5 inline">
+                              <input type="phone" placeholder="  رقم الجوال">
+                          </label>
+                          </div>
+                          <div class="">
+                            <label class="input rounded-5">
+                              <input type="number" placeholder="  رمز البلد ">
+                          </label>
+                          </div>
+                      </div>
+                      <button class="btn w-full form-btn bg-gray rounded-5 color-gray"> أرسال رمز التحقق</button>
+                      <label class="input rounded-5">
+                          <input type="text" placeholder=" اسم الاول">
+                      </label>
+                      <label class="input rounded-5">
+                          <input type="text" placeholder=" اسم العائله">
+                      </label>
+                      <label class="input rounded-5">
+                          <input type="email" placeholder="  البريد الاكتروني">
+                      </label>
+                      <label class="input rounded-5">
+                          <input type="password" placeholder=" كلمه المرور ">
+                      </label>
+                      <label class="checkbox rounded-5 ">
+                          <input type="checkbox">
+                          <span class="color-gray">أوافق على <a href="#"  class="color-blue">الشروط والاوحكام</a> </span>
+                      </label>
+                      <label class="checkbox rounded-5 ">
+                          <input type="checkbox">
+                          <span class="color-gray"> لانضمام للنشره البريديه</span>
+                      </label>
+                      <button class="btn w-full form-btn bg-gray color-gray rounded-5">انشاء حساب </button>
+                  </form>
+                  <div class="regiter_links flex-col">
+                      <p class="color-gray"> ليس لديك حساب ؟ <a id='login_in_existing_account' class="color-blue" href="#">تسجيل الدخول</a></p>
+                  </div>
+              </div>
+          </div>
+          <div id='image-gallery' class='hidden'>
+            <div class="arraws hidden">
+              <img id='left' src="../assets/svgs/left-arrow.svg" alt="">
+              <img id='right' src="../assets/svgs/right-arrow.svg" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+</div> 
+  <include src="../src/component/footer.html">Loading...</include>
   <script src="../src/js/main.js" ></script>
+  <script src="../src/js/nav.js" ></script>
+  <script src="../src/js/modal.js" ></script>
 </body>
 </html>

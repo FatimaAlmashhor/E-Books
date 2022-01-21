@@ -1,8 +1,8 @@
-const get_one = (element) => document.querySelector(element);
+const getId = (element) => document.querySelector(element);
 const get_all = (element) => document.querySelectorAll(element);
 // import {get_one , get_all} from './main' ;
-const product_list = get_one('#product_list')
-const cart_counter = get_one('#cart-counter')
+const product_list = getId('#product_list')
+const cart_counter = getId('#cart-counter')
 const damoData = [
   {
     id: 0,
@@ -116,7 +116,7 @@ const _fetchData = (arr) => {
 
 // })
 // document.addEventListener('keydown')
-get_one('#search_input').addEventListener('keydown', async (e) => {
+getId('#search_input').addEventListener('keydown', async (e) => {
   product_list.innerHTML = '';
   console.log(e.target.value);
   let filter = damoData.filter(element => {
