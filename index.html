@@ -16,7 +16,7 @@
             <span>أدخل لحسابك اوسجل الان </span>
         </li>
         <li>
-          <a href=''>
+          <a href='./index.html'>
             <i class="nav_icon"><img src="./assets/svgs/star.svg"/></i>
             <span> الرئسية </span>
           </a>
@@ -69,16 +69,17 @@
 
     <header>
       <div class="header-warrper container">
-        <div class="logo">
+        <a href='./index.html' class="logo">
           <img src="./assets/images/img.png" alt="">
-        </div>
+        </a >
         <div class="search">
-          <input type="text" placeholder="البحث" />
-          <button ><span>
-            <img src="./assets/svgs/search.svg"/>
+          <input  id='search_input' type="text" placeholder="البحث" />
+          <button id='search_btn' ><span>
+            <img src="../assets/svgs/search.svg"/>
           </span></button>
         </div>
-        <a class="cart" href="./pages/cart.html">
+        <a  class="cart flex-col flex-center"  href="./pages/cart.html">
+          <span id='cart-counter'>0</span>s
         </a>
       </div>
       <div class="slider">
@@ -105,8 +106,8 @@
           <!-- <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> -->
         </div>
       </div>
-    </header>
-    <main class="flex-col">
+    
+      <main class="flex-col">
       <!-- like this cll the pages -->
         <section class="section section_cates container">
           <div class="products_row_title flex-row justify_content_between">
@@ -185,7 +186,7 @@
             </div>
             <div class="products_row_content slider_col ">
               <div class="slider_col_warrper">
-                <ul class="products_list slider_list ">
+                <ul id='product_list' class="products_list slider_list ">
                   <li class="product">
                     <span class=" discount flex-row justify_content_between font-14">
                       <span class="count-down"> </span>
@@ -215,7 +216,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -255,7 +256,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -295,7 +296,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -305,38 +306,6 @@
                         </div>
                       </div>
                     </div>
-                  </li>
-                  <li class="product">
-                    <a href='./pages/details.html' class="product_warpper flex-col">
-                      <div class="product_img">
-                        <img src="./assets/images/504021.jpg" alt="">
-                      </div>
-                      <div class="product_content">
-                        <div class="product_name">
-                          <h4 class="">كتاب التروني</h4>
-                          <!-- <p>something</p> -->
-                        </div>
-                        <div class="product_price color-red">
-                          <h3 class="font-bold">19.99<small>ر.ي</small></h3>
-                          <p class="font-12 color-gray">شامل الضريبه</p>
-                        </div>
-                        <!-- <div class="product_more-info">
-                          inforamtion
-                        </div> -->
-                        <div class="product_interactive flex-row  justify_content_around ">
-                          <span class="w-20  flex-center ">
-                            <img src="./assets/svgs/star.svg" />
-                          </span>
-                          <span class="adding-cart w-20">
-                            <img src="./assets/svgs/white-card.svg" />
-                          </span>
-                          <span class="w-20">
-                            <img src="./assets/svgs/two-arrow.svg" />
-                          </span>
-                          
-                        </div>
-                      </div>
-                    </a>
                   </li>
                   <li class="product">
                     <span class=" discount flex-row justify_content_between font-14">
@@ -367,7 +336,47 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
+                            <img src="./assets/svgs/white-card.svg" />
+                          </span>
+                          <span class="w-20">
+                            <img src="./assets/svgs/two-arrow.svg" />
+                          </span>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product">
+                    <span class=" discount flex-row justify_content_between font-14">
+                      <span class="count-down"> </span>
+                      <span class="font-bold">OFF</span>
+                    </span>
+                    <div  class="product_warpper flex-col">
+                      <a href="./pages/details.html">
+                        <div class="product_img">
+                          <img src="./assets/images/465531.jpg" alt="">
+                        </div>
+                      </a>
+                      <div class="product_content">
+                        <a href="./pages/details.html">
+                          <div class="product_name">
+                            <h4 class="">كتاب التروني</h4>
+                            <!-- <p>something</p> -->
+                          </div>
+                          <div class="product_price color-red">
+                            <h3 class="font-bold">19.99<small>ر.ي</small></h3>
+                            <p class="font-12 color-gray">شامل الضريبه</p>
+                          </div>
+                        </a>
+                        <!-- <div class="product_more-info">
+                          inforamtion
+                        </div> -->
+                        <div class="product_interactive flex-row  justify_content_around ">
+                          <span class="w-20  flex-center ">
+                            <img src="./assets/svgs/star.svg" />
+                          </span>
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -417,7 +426,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -453,7 +462,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -489,7 +498,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -525,7 +534,7 @@
                           <span class="w-20  flex-center ">
                             <img src="./assets/svgs/star.svg" />
                           </span>
-                          <span class=" w-20 adding-cart">
+                          <span class=" w-20 cart_icon adding-cart">
                             <img src="./assets/svgs/white-card.svg" />
                           </span>
                           <span class="w-20">
@@ -542,7 +551,7 @@
           </div>
         </section>
       </main>
-      
+    </header>  
     <footer>
       <div class="footer-warpper ">
         <!-- dark footer -->
@@ -744,10 +753,10 @@
           </div>
       </div>
   </div> 
-
-  <script  src="./src/js/main.js"></script>
+  <!-- <script src="./utils/damoData.js" ></script> -->
+  <script  src="./src/js/search.js"></script>
+  <script  src="./src/js/nav.js"></script>
   <script  src="./src/js/countdown.js"></script>
   <script  src="./src/js/modal.js"></script>
-  <script  src="./src/js/nav.js"></script>
   </body>
 </html>

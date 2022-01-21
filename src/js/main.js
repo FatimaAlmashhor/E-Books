@@ -1,6 +1,5 @@
 
 (async () => {
-    console.log('[on load]');
     const includes = document.getElementsByTagName('include');
     await [].forEach.call(includes, i => {
         let filePath = i.getAttribute('src');
@@ -16,10 +15,9 @@
 
 })();
 
-console.log('[outer function]');
 
-export const get_one = (element) => document.querySelector(element);
-export const get_all = (element) => document.querySelectorAll(element);
+// export const get_one = (element) => document.querySelector(element);
+// export const get_all = (element) => document.querySelectorAll(element);
 
 
 //  get_arr
