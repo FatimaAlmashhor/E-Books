@@ -5,7 +5,7 @@ header{
 
 .header-warrper{
     position: sticky;
-    top: 6px;
+    top: 0px;
     height: inherit;
     width: 100%;
     display: flex;

@@ -21,17 +21,19 @@
     padding: var( --padding);
     background-color: rgb(226, 242, 250);
     cursor: pointer;
+    
 }
 .collaps_item_header:hover{
     background-color: rgb(204, 231, 245);
 }
 .collaps_item_body{
+    display: none;
     height: 0px;
-    visibility: hidden;
 }
 .collaps_item_body.active{
+    transition: 0.4s;
+    display: inline-block;
     height: fit-content;
-    visibility: visible;
 }
 
 .collaps_icon{

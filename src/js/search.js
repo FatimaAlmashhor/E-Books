@@ -60,7 +60,7 @@ const _fetchData = (arr) => {
       </div>
     </div>
   </div>`;
-    li_element.classList.add('product')
+    li_element.className = 'product m-1'
     product_list.append(li_element);
   })
   console.log('i am the loop element', arr);
