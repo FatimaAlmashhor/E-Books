@@ -48,6 +48,7 @@ footer{
 }
 .payment_carts li{
     margin: auto 2px;
+    max-width: 60px;
 }
 .socail_items{
     display: flex;
