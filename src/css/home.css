@@ -56,6 +56,6 @@
 
 /* here the advires section */
 .section_advir_bottom{
-    min-height:200px ;
+    /* min-height:200px ; */
     margin-top: 5px;
 }
