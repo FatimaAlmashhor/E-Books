@@ -9,7 +9,7 @@
     z-index: 1000;
 }
 .modal_warpper{
-    min-width:400px ;
+    min-width:320px ;
     min-height:fit-content ;
     background-color: var(--white);
     border-radius: 5px;
