@@ -79,7 +79,7 @@ const _fetchData = (arr) => {
         <img src="${element.img}" alt="">
       </div>
     </a>
-    <div class="product_content">
+    <div class="product_content my-1">
       <a href="./details.html">
         <div class="product_name">
           <h4 class="">${element.title}</h4>
