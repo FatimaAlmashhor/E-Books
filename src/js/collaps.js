@@ -1,4 +1,5 @@
-import { get_one, get_all } from './main'
+export const get_one = (element) => document.querySelector(element);
+export const get_all = (element) => document.querySelectorAll(element);
 const collaps = get_all('.collaps_item_header');
 
 collaps.forEach(collap => {

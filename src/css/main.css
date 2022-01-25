@@ -10,6 +10,7 @@
 @import url('./cart.css');
 @import url('./progress.css');
 @import url('./collaps.css');
+@import url('./dropdown.css');
 @import url('./modal.css');
 a{
     text-decoration: none;
