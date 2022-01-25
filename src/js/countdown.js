@@ -1,7 +1,13 @@
 count_down = document.querySelectorAll('.count-down');
 
 // Set the date we're counting down to
-var countDownDate = [new Date("Jan 20, 2022 15:37:25").getTime(), new Date("Jan 28, 2022 15:37:25").getTime(), new Date("Jan 30, 2022 15:37:25").getTime()];
+var countDownDate = [new Date("Jan 20, 2022 15:37:25").getTime(),
+new Date("Jan 28, 2022 15:37:25").getTime(),
+new Date("Jan 30, 2022 15:37:25").getTime(),
+new Date("Jan 30, 2022 15:37:25").getTime(),
+new Date("Jan 30, 2022 15:37:25").getTime(),
+new Date("Jan 30, 2022 15:37:25").getTime(),
+];
 count_down.forEach((element, index) => {
     var x = setInterval(function () {
 
