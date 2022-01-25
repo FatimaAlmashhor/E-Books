@@ -2,7 +2,7 @@ const getId = (element) => document.querySelector(element);
 const get_all = (element) => document.querySelectorAll(element);
 // import {get_one , get_all} from './main' ;
 const product_list = getId('#product_list')
-const cart_counter = getId('#cart-counter')
+
 const damoData = [
   {
     id: 0,
@@ -48,26 +48,7 @@ const damoData = [
   },
 
 ]
-let current_counter = 0;
-let storeCart = localStorage.getItem('cart_counter');
-window.onload = () => {
-  _fetchData(damoData);
 
-  // add to cart function 
-
-  console.log('[storeCart]', storeCart);
-  storeCart = storeCart === null ? 0 : storeCart;
-  current_counter = storeCart;
-  cart_counter.innerText = current_counter > 9 ? "9+" : current_counter;
-  get_all('.cart_icon').forEach(element => {
-    element.addEventListener('click', (e) => {
-      current_counter++;
-      cart_counter.innerText = current_counter > 9 ? "9+" : current_counter;
-      localStorage.setItem('cart_counter', current_counter)
-    })
-  })
-
-}
 
 const _fetchData = (arr) => {
   arr.forEach(element => {
@@ -133,4 +114,4 @@ getId('#search_input').addEventListener('keydown', async (e) => {
 })
 
 
-
+_fetchData(damoData);
