@@ -331,7 +331,7 @@ img{
     border-bottom-right-radius: 4px;
 }
 .book_additional_info , .box {
-    min-width: 400px;
+    min-width: 300px;
     height: fit-content;
     margin: 1.1rem;
     padding: 1.1rem;
