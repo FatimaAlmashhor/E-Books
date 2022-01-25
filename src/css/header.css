@@ -70,16 +70,17 @@ header{
 } */
 .slider{
     position: relative;
-    width: 65%;
-    height: 70vh;
+    width: 93vw;
+    /* padding: 0px 5.2rem; */
+    /* height: 70vh; */
     display: flex;
     flex-direction: row;
     justify-self: center;
-    margin : 20px auto ;
+    margin : 3rem auto ;
     overflow: hidden;
-    /* background-color: saddlebrown; */
+    z-index: 10;
 }
-.slider::after{
+/* .slider::after{
     content: '>';
     position: absolute;
     color:rgb(22, 22, 22);
@@ -87,7 +88,7 @@ header{
     font-size: 20px;
     font-weight: bold;
     bottom: 50%;
-}
+} */
 .slider-dots{
     position: absolute;
     bottom: 20px;
@@ -107,11 +108,10 @@ header{
     --image-width :  1000px;
     --slider-width : 400% ;
     position: relative;
-    min-width: var( --slider-width);
-    height: 100%;
-    background-color: rosybrown;
+    /* min-width: var( --slider-width); */
+    /* height: 100%; */
+    /* background-color: rosybrown; */
     display: flex;
-    /* border: 20px solid red; */
     /* flex-direction: column; */
     align-items: flex-start;
     animation-name: slide-right;
@@ -122,8 +122,9 @@ header{
     overflow: hidden;
 }
  .slider_img{
-    display: inline-block;
-    min-width:var(--image-width);
+     display: inline-block;
+    /* min-width:var(--image-width); */
+    min-width: 94vw;
     height: 100%;
 
     
@@ -138,6 +139,32 @@ header{
     background-repeat: no-repeat;
 } */
 @keyframes  slide-right {
+    0%,100%{
+        margin-right:0%;
+      }
+      21%{
+        margin-right:0%;
+      }
+      25%{
+        margin-right:-95vw;
+      }
+      46%{
+        margin-right: -95vw;
+      }
+      50%{
+        margin-right:calc(-95vw * 2);
+      }
+      71%{
+        margin-right:calc(-95vw * 2);
+      }
+      75%{
+        margin-right:calc(-95vw * 3);
+      }
+      96%{
+        margin-right:calc(-95vw * 3);
+      }
+}
+/* @keyframes  slide-right {
     0%,100%{
         margin-right:0%;
       }
@@ -162,10 +189,11 @@ header{
       96%{
         margin-right:-300%;
       }
-}
+} */
 
 @media screen and (max-width : 800px) {
     .slider{
         width: 100%;
+        padding : 0px 0.2rem
     }
 }
