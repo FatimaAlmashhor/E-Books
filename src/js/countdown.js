@@ -1,12 +1,13 @@
 count_down = document.querySelectorAll('.count-down');
 
 // Set the date we're counting down to
-var countDownDate = [new Date("Jan 20, 2022 15:37:25").getTime(),
-new Date("Jan 28, 2022 15:37:25").getTime(),
-new Date("Jan 30, 2022 15:37:25").getTime(),
-new Date("Jan 30, 2022 15:37:25").getTime(),
-new Date("Jan 30, 2022 15:37:25").getTime(),
-new Date("Jan 30, 2022 15:37:25").getTime(),
+var countDownDate = [
+    new Date("Jan 29, 2022 10:37:25").getTime(),
+    new Date("Jan 28, 2022 15:37:25").getTime(),
+    new Date("Feb 30, 2022 12:37:25").getTime(),
+    new Date("Jan 30, 2022 9:37:25").getTime(),
+    new Date("Jan 30, 2022 4:37:25").getTime(),
+    new Date("Jan 30, 2022 5:37:25").getTime(),
 ];
 count_down.forEach((element, index) => {
     var x = setInterval(function () {
@@ -25,7 +26,7 @@ count_down.forEach((element, index) => {
 
         // Display the result in the element with id="demo"
 
-        element.+ = days + "d " + hours + ": "
+        element.innerText = 'OFF% : ' + days + "d " + hours + ": "
             + minutes + ": " + seconds + "";
         // If the count down is finished, write some text
         if (distance < 0) {

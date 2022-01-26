@@ -40,3 +40,6 @@
 .checkbox span{
     flex: 2;
 }
+#create_account{
+    cursor: pointer;
+}
