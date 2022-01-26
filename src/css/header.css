@@ -132,28 +132,33 @@ header{
     display: flex;
     justify-content: center;
 }
-.slider-dots li{
-    width: 10px;
-    height: 10px;
-    background-color: white;
+.slider-dots .dot{
+    width: 13px;
+    height: 13px;
+    background-color: rgb(218, 218, 218);
     border-radius: 50%;
-    margin: 0px 10px;
+    margin: 0px 0.7rem;
+}
+.dot.active{
+
+    background-color: rgb(255, 255, 255);
+    --active-color : rgb(153, 163, 253); 
+    box-shadow: 0 0 0 2px rgb(64, 67, 255), 0 0 0 1px var(--active-color); 
 }
 .slider_warrper{
-    --image-width :  1000px;
-    --slider-width : 400% ;
+    --dublicateNu : 0 ;
     position: relative;
     /* min-width: var( --slider-width); */
     /* height: 100%; */
-    /* background-color: rosybrown; */
     display: flex;
     /* flex-direction: column; */
+    margin-right:calc(-95vw * var(--dublicateNu));
     align-items: flex-start;
-    animation-name: slide-right;
+    /* animation-name: slide-right;
     animation-delay: 0.4s;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation-direction: normal; */
     overflow: hidden;
 }
  .slider_img{
@@ -173,12 +178,12 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 } */
-@keyframes  slide-right {
+/* @keyframes  slide-right {
     0%,100%{
-        margin-right:0%;
+        margin-right:0% ;
       }
       21%{
-        margin-right:0%;
+        margin-right:0% ;
       }
       25%{
         margin-right:-95vw;
@@ -198,37 +203,11 @@ header{
       96%{
         margin-right:calc(-95vw * 3);
       }
-}
-/* @keyframes  slide-right {
-    0%,100%{
-        margin-right:0%;
-      }
-      21%{
-        margin-right:0%;
-      }
-      25%{
-        margin-right:-100%;
-      }
-      46%{
-        margin-right:-100%;
-      }
-      50%{
-        margin-right:-200%;
-      }
-      71%{
-        margin-right:-200%;
-      }
-      75%{
-        margin-right:-300%;
-      }
-      96%{
-        margin-right:-300%;
-      }
 } */
 
 @media screen and (max-width : 800px) {
     .slider{
         width: 100%;
-        padding : 0px 0.2rem
+        padding : 0px 
     }
 }

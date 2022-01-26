@@ -25,7 +25,7 @@ count_down.forEach((element, index) => {
 
         // Display the result in the element with id="demo"
 
-        element.innerText = days + "d " + hours + ": "
+        element.+ = days + "d " + hours + ": "
             + minutes + ": " + seconds + "";
         // If the count down is finished, write some text
         if (distance < 0) {
