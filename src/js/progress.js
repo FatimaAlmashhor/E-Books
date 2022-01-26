@@ -26,7 +26,7 @@ next.addEventListener('click', (e => {
     }
     if (progress === progressNumbers - 1) {
         if (next.innerText === 'تم') {
-            window.location.href = 'http://localhost:3000/'
+            window.location.href = '../'
         }
         next.innerText = 'تم'
     }

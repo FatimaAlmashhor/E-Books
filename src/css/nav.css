@@ -71,6 +71,9 @@ nav{
         align-items: flex-start;
         width: 100%;
     }
+    .nav-list li{
+        border: none ;
+    }
 }
 @media screen and(min-width : 690) {
    
