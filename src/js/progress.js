@@ -8,8 +8,11 @@ const back = getone('#back')
 let progress = 0;
 const progressNumbers = steps.length;
 
+// good UX for the init 
+back.style.display = 'none'
 
 next.addEventListener('click', (e => {
+    back.style.display = 'inline'
     if (progress >= progressNumbers - 1) {
         console.log('stop');
     }
@@ -21,18 +24,29 @@ next.addEventListener('click', (e => {
             getone(`[data-progress-content='${progress - 1}']`).classList.add('hidden')
         }
     }
+    if (progress === progressNumbers - 1) {
+        if (next.innerText === 'تم') {
+            window.location.href = 'http://localhost:3000/'
+        }
+        next.innerText = 'تم'
+    }
 }))
 back.addEventListener('click', (e => {
-    if (progress == 0) {
-        console.log('stop prev');
-    }
-    else {
+    console.log('[progress]', progress);
+    if (progress > 0) {
         steps[progress].classList.remove('active')
         progress--;
         getone(`[data-progress-content='${progress}']`).classList.remove('hidden')
         if (progress < progressNumbers) {
-            console.log('[progress]', progress);
             getone(`[data-progress-content='${progress + 1}']`).classList.add('hidden')
         }
+
+    }
+    else {
+        console.log('stop prev');
+
+    }
+    if (progress == 0) {
+        back.style.display = 'none'
     }
 }))
