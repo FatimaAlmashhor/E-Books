@@ -29,12 +29,16 @@
     margin: 0px;
     padding: 0px ;
     box-sizing: border-box;
-    direction: var(--lang);
     transition: 0.3s linear;
 }
 body{
     font-family: 'Tajawal',sans-serif;
     overflow-x: hidden;
+    direction: var(--lang);
+}
+body.en{
+    --lang :ltr ; 
+    direction: var(--lang);
 }
 button{
     font-family: inherit;

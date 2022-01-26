@@ -8,7 +8,7 @@
     <title>E-book</title>
     <!-- <base href="http://localhost/">  -->
   </head>
-  <body>
+  <body class="en">
     <nav class="">
       <ul class="nav-list  container">
         <li class=" flex-row flex-center login-btn">
@@ -52,11 +52,9 @@
           </a>
         </li>
         
-        <li>
-          <a href=''>
+        <li id='switch_lang' class="flex-row flex-center">
             <i class="nav_icon"><img src="./assets/svgs/langs.svg"/></i>
-            <span> English  </span>
-          </a>
+            <span > English  </span>
         </li>
         
       </ul>
@@ -79,7 +77,7 @@
           </span></button>
         </div>
         <a  class="cart flex-col flex-center"  href="./pages/cart.html">
-          <span id='cart-counter'>0</span>s
+          <span id='cart-counter'>0</span>
         </a>
       </div>
       <div class="slider">
@@ -1083,6 +1081,7 @@
   <!-- <script  src="./src/js/search.js"></script> -->
   <script  src="./src/js/cart.js"></script>
   <script  src="./src/js/mainSlider.js"></script>
+  <script  src="./src/js/toggleLangs.js"></script>
   <script  src="./src/js/nav.js"></script>
   <script  src="./src/js/countdown.js"></script>
   </body>

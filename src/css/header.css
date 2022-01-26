@@ -52,6 +52,7 @@ header{
 
 
 .cart{
+    position: relative;
     background-color: var(--dark-gray);
     background-image: url('../../assets/svgs/cart.svg');
     background-position: center;
@@ -68,6 +69,11 @@ header{
     height: 90%;
     border-radius: inherit;
 } */
+#cart-counter{
+    position: absolute;
+    top:0px;
+    
+}
 .slider{
     position: relative;
     width: 90vw;
