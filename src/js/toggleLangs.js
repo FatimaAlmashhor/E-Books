@@ -1,13 +1,30 @@
 const switch_lang = document.getElementById('switch_lang');
+const body = document.getElementsByTagName('body')
 
 let cuurentLang = localStorage.getItem('lang')
-switch_lang.addEventListener('click', (e) => {
-    const body = document.getElementsByTagName('body')
-    cuurentLang = localStorage.getItem('lang')
-    cuurentLang === null ? 'ar' : cuurentLang
-    let switchLang = cuurentLang === 'ar' ? 'en' : 'ar'
-    body[0].classList.toggle('en')
-    localStorage.setItem('lang', switchLang)
-    e.target.innerText = switchLang === 'en' ? 'english' : 'العربية'
+const checkLang = () => {
+    console.log('[before the storage]', cuurentLang);
+    if (cuurentLang != null) {
+        if (cuurentLang === 'en') {
+            body[0].classList.add('en')
+        }
+        else {
+            body[0].classList.remove('en')
 
+        }
+    } else {
+        body[0].classList.add('en')
+    }
+    console.log('[afer the chainge]', cuurentLang);
+    localStorage.setItem('lang', cuurentLang)
+    switch_lang.innerText = cuurentLang === 'en' ? 'english' : 'العربية'
+}
+switch_lang.innerText = body[0].className === '' ? 'english' : 'العربية'
+switch_lang.addEventListener('click', (e) => {
+    cuurentLang === 'en' ? 'ar' : 'en'
+    body[0].classList.toggle('en')
+    switch_lang.innerText = body[0].className === '' ? 'english' : 'العربية'
+    // checkLang()
+    // console.log('[after the storage ]', localStorage.getItem('lang'));
 })
+// checkLang();
