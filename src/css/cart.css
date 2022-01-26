@@ -12,3 +12,16 @@
     border-radius: 1px;
     /* padding : 3px; */
 }
+#cart-counter{
+    position: absolute;
+    background-color: red;
+    right: -10px;
+    top:0px;
+    width: 24px;
+    height: 24px;
+    padding : 3px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
