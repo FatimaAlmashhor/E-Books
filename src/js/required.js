@@ -1,5 +1,5 @@
-// const get_one = (element) => document.querySelector(element)
-import { get_one } from './main';
+const get_one = (element) => document.querySelector(element)
+// import { get_one } from './main';
 const requirment_list = get_one('#required-table');
 const comments_list = get_one('#comments');
 import { reqs, comments } from '../../utils/damoData';

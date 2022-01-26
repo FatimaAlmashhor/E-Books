@@ -17,7 +17,6 @@ arrow_left.addEventListener('click', (e) => {
 arrow_right.addEventListener('click', (e) => {
     deleteAllDots();
     current <= 0 ? current = sliderNu - 1 : --current;
-    console.log('[toggle]', getComputedStyle(slider_warrper).getPropertyValue('--dublicateNu'));
     slider_warrper.style.setProperty('--dublicateNu', current);
     dots[current].classList.add('active')
 
@@ -27,7 +26,6 @@ arrow_right.addEventListener('click', (e) => {
 function autoSlide() {
     deleteAllDots();
     current > sliderNu - 2 ? current = 0 : ++current;
-    console.log('[toggle]', getComputedStyle(slider_warrper).getPropertyValue('--dublicateNu'));
     slider_warrper.style.setProperty('--dublicateNu', current);
     dots[current].classList.add('active')
 }
