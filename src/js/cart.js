@@ -3,7 +3,7 @@ const cart_counter = document.querySelector('#cart-counter')
 
 let current_counter = 0;
 let storeCart = localStorage.getItem('cart_counter');
-window.onload = () => {
+window.addEventListener('DOMContentLoaded', () => {
     // add to cart function 
 
     storeCart = storeCart === null ? 0 : storeCart;
@@ -16,4 +16,4 @@ window.onload = () => {
             localStorage.setItem('cart_counter', current_counter)
         })
     })
-}
+})  
