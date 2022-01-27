@@ -7,19 +7,19 @@ let slider_col_warrper = document.querySelector('.slider_col_warrper')
 
 console.log('[list childern]', slider_length.children);
 left.addEventListener('click', () => {
-    // console.log('[right]', slider_col_warrper.getBoundingClientRect().right);
-    // console.log('[clientWidth]', slider_length.clientWidth);
+    console.log('[right]', slider_col_warrper.getBoundingClientRect().right);
+    console.log('[clientWidth]', slider_length.clientWidth);
     if (slider_length.clientWidth > slider_col_warrper.getBoundingClientRect().right) {
 
-        // slider_length.style.marginRight = ` ${slider_length.clientWidth}px`
-        slider_length.style.marginRight = `100%`
+        slider_length.style.marginRight = ` ${slider_col_warrper.getBoundingClientRect().right - slider_length.clientWidth}px`
+        // slider_length.style.marginRight = `100%`
     }
 })
 right.addEventListener('click', () => {
     console.log('[clientWidth]', slider_length.clientWidth);
     console.log('[left]', slider_col_warrper.getBoundingClientRect().right);
     if (slider_length.clientWidth < slider_col_warrper.getBoundingClientRect().right) {
-        slider_length.style.marginRight = ` -${slider_length.clientWidth}px`
+        slider_length.style.marginRight = ` -${slider_length.clientWidth - slider_col_warrper.getBoundingClientRect().left}px`
     }
 
 })
