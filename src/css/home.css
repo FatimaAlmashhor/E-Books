@@ -20,6 +20,7 @@
     overflow: hidden;
     cursor: pointer;
     transform: translate3d();
+    margin : auto 0.4rem;
 }
 /* .slider_col.arrow_right{
     position: absolute;
