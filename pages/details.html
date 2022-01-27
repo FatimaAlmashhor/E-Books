@@ -550,5 +550,12 @@
     <script type="module" src="../src/js/mainSlider.js"></script>
     <script type="module" src="../src/js/toggleLangs.js"></script>
     <script type="module" src="../src/js/nav.js"></script>
+    <script>
+      const header = document.querySelector('.header-warrper');
+      window.addEventListener('scroll' , ()=>{
+  
+        window.scrollY === 0 ?  header.classList.add('header_top') :  header.classList.remove('header_top')
+      })
+    </script>
   </body>
 </html>

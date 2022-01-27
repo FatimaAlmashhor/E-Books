@@ -70,7 +70,7 @@
     </nav>
 
     <header>
-      <div class="header-warrper container">
+      <div class="header-warrper container header_top ">
         <a href='./index.html' class="logo">
           <img src="./assets/images/img.png" alt="">
         </a >
@@ -1793,5 +1793,12 @@
   <script  src="./src/js/toggleLangs.js"></script>
   <script  src="./src/js/nav.js"></script>
   <script  src="./src/js/countdown.js"></script>
+  <script>
+    const header = document.querySelector('.header-warrper');
+    window.addEventListener('scroll' , ()=>{
+
+      window.scrollY === 0 ?  header.classList.add('header_top') :  header.classList.remove('header_top')
+    })
+  </script>
   </body>
 </html>
