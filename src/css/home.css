@@ -43,8 +43,17 @@
 .slider_col_warrper{
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scrollbar-color:transparent ;
+    
 }
+.slider_col_warrper::-webkit-scrollbar {
+    visibility: hidden;
+  }
 .cates_list , .slider_list {
     position: relative;
     display: flex;
